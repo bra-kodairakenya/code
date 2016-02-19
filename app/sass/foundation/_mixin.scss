@@ -11,25 +11,25 @@ $media-sp: 600px;
 
 
 // mixin
-@mixin media-max {
+@mixin media-max($media-max) {
   @media only screen and (min-width: $media-max ) {
     @content;
   }
 }
 
-@mixin media-middle {
+@mixin media-middle($media-pc, $media-middle) {
   @media only screen and (min-width:$media-pc) and ( max-width: $media-middle){
     @content;
   }
 }
 
-@mixin media-pc {
+@mixin media-pc($media-pc) {
   @media only screen and (min-width: $media-pc ) {
     @content;
   }
 }
 
-@mixin media-sp {
+@mixin media-sp($media-sp) {
   @media only screen and (max-width: $media-sp) {
     @content;
   }
